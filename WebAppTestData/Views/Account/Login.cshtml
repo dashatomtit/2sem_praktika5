@@ -1,0 +1,26 @@
+
+@{
+    ViewData["Title"] = "Вход для пользователя";
+}
+
+<h1>Вход для пользователя</h1>
+
+
+<form asp-action="Вход для пользователя">
+    <div>
+        <label>
+            Логин:
+        </label>
+        
+        <input class="form-control"/>
+    </div>
+    <div>
+        <label>
+            Пароль:
+        </label>
+       
+        <input class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-outline-success sign_in" onclick="signIn" asp-controller="Home" asp-action="Index">Войти</button>
+</form>
+<script src="js/site.js"></script>
